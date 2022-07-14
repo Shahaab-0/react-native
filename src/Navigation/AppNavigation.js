@@ -11,7 +11,6 @@ import {useAppContext} from '../Services/Auth/AppContext';
 import {APP_STATE} from '../Constants';
 import useAppTheme from '../Themes/Context';
 
-
 export default function RootNavigation(props) {
   React.useEffect(() => {
     isMountedRef.current = true;
@@ -26,7 +25,7 @@ export default function RootNavigation(props) {
         screenOptions={{
           headerShown: false,
         }}>
-          <Stack.Screen name={Routes.MAIN_APP} component={MainStack} />
+        <Stack.Screen name={Routes.MAIN_APP} component={MainStack} />
         {/* {state === APP_STATE.PRIVATE ? (
           <Stack.Screen name={Routes.MAIN_APP} component={MainStack} />
         ) : state === APP_STATE.PUBLIC ? (

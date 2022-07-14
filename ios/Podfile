@@ -16,6 +16,8 @@ config = use_native_modules!
     :hermes_enabled => false
   )
 
+  pod 'RNViewOverflow', :path => '../node_modules/react-native-view-overflow'
+
   target 'easy_boilerTests' do
     inherit! :complete
     # Pods for testing
